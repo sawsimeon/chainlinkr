@@ -1,0 +1,38 @@
+Package: chainlinkr
+Title: Access Chainlink Price Feeds from R
+Version: 0.0.0.1000
+Authors@R: 
+    person("Saw", "Simeon", 
+           email = "saw.s@ku.th",
+           role = c("aut", "cre"))
+Description: 
+    chainlinkr provides a tidyverse-friendly interface to Chainlink Price Feeds.
+    Data scientists, quantitative analysts, and researchers can retrieve real-time
+    and historical decentralized price data (e.g., BTC/USD, ETH/USD, EUR/USD) from
+    all Chainlink-supported networks directly in R — no blockchain knowledge or
+    Web3 libraries required. Functions return tibbles and integrate seamlessly
+    with ggplot2, dplyr, and the broader tidyverse ecosystem.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    httr,
+    jsonlite,
+    dplyr,
+    tibble,
+    purrr,
+    lubridate,
+    ggplot2,
+    rlang,
+    cli
+Suggests:
+    testthat (>= 3.0.0),
+    covr,
+    pkgdown,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/sawsimeon/chainlinkr
+BugReports: https://github.com/sawsimeon/chainlinkr/issues
